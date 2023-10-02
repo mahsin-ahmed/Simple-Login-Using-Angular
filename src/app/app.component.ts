@@ -10,15 +10,16 @@ export class AppComponent {
   password:any = '';
 
   Users =  {
-    userName :'mahsin',
-    password:'582596',
+    userName :'',
+    password:'',
   }
 
   Signin(){
-    if(this.userName == this.Users.userName && this.password == this.Users.password){
-      console.log('Login Success');
+    if(this.Users.userName == 'admin' && this.Users.password == '582596'){
+      // redirect to dashboard
+      this.redirectUrl = '/dashboard';
     }else{
-      console.log('Login fail');
+      // redirect to login page again
     }
   }
 }
