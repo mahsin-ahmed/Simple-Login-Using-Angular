@@ -13,13 +13,4 @@ export class AppComponent {
     userName :'',
     password:'',
   }
-
-  Signin(){
-    if(this.Users.userName == 'admin' && this.Users.password == '582596'){
-      // redirect to dashboard
-      this.redirectUrl = '/dashboard';
-    }else{
-      // redirect to login page again
-    }
-  }
 }
