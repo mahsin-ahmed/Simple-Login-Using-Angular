@@ -1,1 +1,15 @@
-<p>login works!</p>
+<div class="container">
+    <div class="login-body">
+      <h3>Login Here</h3>
+      <div class="login-form">
+        <form>  
+          <label for="username">Username</label>
+          <input type="text" placeholder="Email or Phone" name="UserName" [(ngModel)] = "User.UserName">
+    
+          <label for="password">Password</label>
+          <input type="password" placeholder="Password" name="UserPass" [(ngModel)]="User.UserPass">    
+          <button (click)="login()">Log In</button>
+        </form>
+      </div>
+    </div>
+  </div>

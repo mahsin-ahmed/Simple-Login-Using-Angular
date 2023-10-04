@@ -6,11 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  userName:any = '';
-  password:any = '';
-
-  Users =  {
-    userName :'',
-    password:'',
-  }
+  title="Simple Login System";
+  userInfo:{
+    userName:string,
+    isLoggedIn:boolean
+  } ={
+    userName:'',
+    isLoggedIn:false
+  };
 }
